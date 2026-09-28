@@ -1,0 +1,9 @@
+name: neuro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - mne
+  - jupyterlab
+  - pip
+  - pip: [mne-bids, python-picard, autoreject, mne-icalabel, onnxruntime]
