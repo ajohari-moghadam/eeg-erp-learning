@@ -6,7 +6,7 @@ All analyses use publicly available datasets.
 
 ## Roadmap
 - [x] Environment and Git setup
-- [ ] Loading and exploring raw EEG data
+- [x] Loading and exploring raw EEG data
 - [ ] Preprocessing: filtering, re-referencing, bad channels
 - [ ] Artifact removal with ICA
 - [ ] Epoching and ERP computation
