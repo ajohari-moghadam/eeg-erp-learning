@@ -7,14 +7,29 @@ All analyses use publicly available datasets.
 ## Roadmap
 - [x] Environment and Git setup
 - [x] Loading and exploring raw EEG data
-- [ ] Preprocessing: filtering, re-referencing, bad channels
+- [ ] Preprocessing
+  - [x] Power spectrum and high-pass filtering
+  - [x] Resampling
+  - [x] Bad channel detection (visual, spectral, and robust statistics)
+  - [ ] Re-referencing
 - [ ] Artifact removal with ICA
 - [ ] Epoching and ERP computation
 - [ ] ERP component measurement and statistics
 
 ## Setup
+```bash
 conda env create -f environment.yml
 conda activate neuro
+```
+
+On Windows, launch VS Code from the activated environment so that the
+Jupyter kernel finds the environment's libraries:
+
+```bash
+conda activate neuro
+cd path\to\eeg-erp-learning
+code .
+```
 
 ## Repository structure
 - `notebooks/` – step-by-step analysis notebooks
